@@ -298,8 +298,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 
-SWIFT_CLASS("_TtC4Mute4Mute")
-@interface Mute : NSObject
+SWIFT_CLASS("_TtC4Mute12UIDeviceMute")
+@interface UIDeviceMute : NSObject
 /// private init
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

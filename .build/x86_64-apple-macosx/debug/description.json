@@ -51,7 +51,7 @@
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/mehul/Downloads/Mute/Sources/Mute/Mute.swift"
+          "name" : "/Users/mehul/Downloads/Mute/Sources/Mute/UIDeviceMute.swift"
         },
         {
           "kind" : "file",
@@ -74,7 +74,7 @@
       "moduleName" : "Mute",
       "moduleOutputPath" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.swiftmodule",
       "objects" : [
-        "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Mute.swift.o",
+        "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/UIDeviceMute.swift.o",
         "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/resource_bundle_accessor.swift.o"
       ],
       "otherArguments" : [
@@ -126,7 +126,7 @@
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Mute.swift.o"
+          "name" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/UIDeviceMute.swift.o"
         },
         {
           "kind" : "file",
@@ -138,7 +138,7 @@
         }
       ],
       "sources" : [
-        "/Users/mehul/Downloads/Mute/Sources/Mute/Mute.swift",
+        "/Users/mehul/Downloads/Mute/Sources/Mute/UIDeviceMute.swift",
         "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/DerivedSources/resource_bundle_accessor.swift"
       ],
       "tempsPath" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build",
@@ -157,7 +157,7 @@
       "mute",
       "-incremental",
       "-c",
-      "/Users/mehul/Downloads/Mute/Sources/Mute/Mute.swift",
+      "/Users/mehul/Downloads/Mute/Sources/Mute/UIDeviceMute.swift",
       "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/DerivedSources/resource_bundle_accessor.swift",
       "-I",
       "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug",
@@ -229,7 +229,7 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/mehul/Downloads/Mute/Sources/Mute/Mute.swift"
+          "name" : "/Users/mehul/Downloads/Mute/Sources/Mute/UIDeviceMute.swift"
         },
         {
           "kind" : "file",

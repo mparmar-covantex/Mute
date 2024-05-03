@@ -2,11 +2,11 @@
   "": {
     "swift-dependencies": "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/master.swiftdeps"
   },
-  "/Users/mehul/Downloads/Mute/Sources/Mute/Mute.swift": {
-    "dependencies": "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Mute.d",
-    "object": "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Mute.swift.o",
-    "swiftmodule": "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Mute~partial.swiftmodule",
-    "swift-dependencies": "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Mute.swiftdeps"
+  "/Users/mehul/Downloads/Mute/Sources/Mute/UIDeviceMute.swift": {
+    "dependencies": "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/UIDeviceMute.d",
+    "object": "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/UIDeviceMute.swift.o",
+    "swiftmodule": "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/UIDeviceMute~partial.swiftmodule",
+    "swift-dependencies": "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/UIDeviceMute.swiftdeps"
   },
   "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/DerivedSources/resource_bundle_accessor.swift": {
     "dependencies": "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/resource_bundle_accessor.d",

@@ -1,6 +1,6 @@
 //
-//  Mute.swift
-//  Mute
+//  UIDeviceMute.swift
+//  UIDeviceMute
 //
 //  Created by Akram Hussein on 08/09/2017.
 //
@@ -12,17 +12,17 @@ import AudioToolbox
 import UIKit
 #endif
 
-public class Mute: NSObject {
+public class UIDeviceMute: NSObject {
 
     public typealias MuteNotificationCompletion = ((_ mute: Bool) -> Void)
 
     // MARK: Properties
 
     /// Shared instance
-    public static let shared = Mute()
+    public static let shared = UIDeviceMute()
 
     /// Sound ID for mute sound
-    private let soundUrl = Mute.muteSoundUrl
+    private let soundUrl = UIDeviceMute.muteSoundUrl
 
     /// Should notify every second or only when changes?
     /// True will notify every second of the state, false only when it changes
@@ -70,7 +70,7 @@ public class Mute: NSObject {
 
     /// Library bundle
     private static var bundle: Bundle {
-        if let path = Bundle(for: Mute.self).path(forResource: "Mute", ofType: "bundle"),
+        if let path = Bundle(for: UIDeviceMute.self).path(forResource: "Mute", ofType: "bundle"),
            let bundle = Bundle(path: path) {
             return bundle
         }
@@ -82,7 +82,7 @@ public class Mute: NSObject {
             Bundle.main.resourceURL,
 
             // Bundle should be present here when the package is linked into a framework.
-            Bundle(for: Mute.self).resourceURL
+            Bundle(for: UIDeviceMute.self).resourceURL
         ]
 
         for candidate in candidates {
@@ -97,7 +97,7 @@ public class Mute: NSObject {
 
     /// Mute sound url path
     private static var muteSoundUrl: URL {
-        guard let muteSoundUrl = Mute.bundle.url(forResource: "mute", withExtension: "aiff") else {
+        guard let muteSoundUrl = UIDeviceMute.bundle.url(forResource: "mute", withExtension: "aiff") else {
             fatalError("mute.aiff not found")
         }
         return muteSoundUrl
@@ -128,12 +128,12 @@ public class Mute: NSObject {
 		#if canImport(UIKit)
 			// Notifications
 		NotificationCenter.default.addObserver(self,
-											   selector: #selector(Mute.didEnterBackground(_:)),
+											   selector: #selector(UIDeviceMute.didEnterBackground(_:)),
 											   name: UIApplication.didEnterBackgroundNotification,
 											   object: nil)
 
 		NotificationCenter.default.addObserver(self,
-											   selector: #selector(Mute.willEnterForeground(_:)),
+											   selector: #selector(UIDeviceMute.willEnterForeground(_:)),
 											   name: UIApplication.willEnterForegroundNotification,
 											   object: nil)
 		#endif
