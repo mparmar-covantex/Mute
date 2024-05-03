@@ -1,0 +1,256 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+    "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute_Mute.bundle/Info.plist" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Info.plist"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute_Mute.bundle/Info.plist"
+        }
+      ]
+    },
+    "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute_Mute.bundle/mute.aiff" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mehul/Downloads/Mute/Mute/Assets/mute.aiff"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute_Mute.bundle/mute.aiff"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Mute-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/sources",
+      "importPath" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mehul/Downloads/Mute/Mute/Classes/Mute.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<Mute-debug.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Mute",
+      "moduleOutputPath" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.swiftmodule",
+      "objects" : [
+        "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Mute.swift.o",
+        "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx13.0",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Mute-Swift.h",
+        "-color-diagnostics",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "mute"
+      ],
+      "outputFileMapPath" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Mute.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/Users/mehul/Downloads/Mute/Mute/Classes/Mute.swift",
+        "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/DerivedSources/resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Mute" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Mute",
+      "-package-name",
+      "mute",
+      "-incremental",
+      "-c",
+      "/Users/mehul/Downloads/Mute/Mute/Classes/Mute.swift",
+      "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/DerivedSources/resource_bundle_accessor.swift",
+      "-I",
+      "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug",
+      "-target",
+      "x86_64-apple-macosx13.0",
+      "-swift-version",
+      "5",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Mute-Swift.h",
+      "-color-diagnostics",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "mute",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Mute" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "writeCommands" : {
+    "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mehul/Downloads/Mute/Mute/Classes/Mute.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/DerivedSources/resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/sources"
+    },
+    "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

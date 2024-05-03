@@ -1,0 +1,4 @@
+module Mute {
+    header "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Mute-Swift.h"
+    requires objc
+}

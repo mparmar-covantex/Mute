@@ -7,7 +7,10 @@
 
 import Foundation
 import AudioToolbox
+
+#if canImport(UIKit)
 import UIKit
+#endif
 
 @objcMembers
 public class Mute: NSObject {
@@ -123,16 +126,18 @@ public class Mute: NSObject {
             self.soundId = 0
         }
 
-        // Notifications
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(Mute.didEnterBackground(_:)),
-                                               name: UIApplication.didEnterBackgroundNotification,
-                                               object: nil)
+		#if canImport(UIKit)
+			// Notifications
+		NotificationCenter.default.addObserver(self,
+											   selector: #selector(Mute.didEnterBackground(_:)),
+											   name: UIApplication.didEnterBackgroundNotification,
+											   object: nil)
 
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(Mute.willEnterForeground(_:)),
-                                               name: UIApplication.willEnterForegroundNotification,
-                                               object: nil)
+		NotificationCenter.default.addObserver(self,
+											   selector: #selector(Mute.willEnterForeground(_:)),
+											   name: UIApplication.willEnterForegroundNotification,
+											   object: nil)
+		#endif
     }
 
     deinit {
