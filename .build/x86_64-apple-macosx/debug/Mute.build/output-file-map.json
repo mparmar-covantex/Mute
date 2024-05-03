@@ -2,7 +2,7 @@
   "": {
     "swift-dependencies": "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/master.swiftdeps"
   },
-  "/Users/mehul/Downloads/Mute/Mute/Classes/Mute.swift": {
+  "/Users/mehul/Downloads/Mute/Sources/Mute/Mute.swift": {
     "dependencies": "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Mute.d",
     "object": "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Mute.swift.o",
     "swiftmodule": "/Users/mehul/Downloads/Mute/.build/x86_64-apple-macosx/debug/Mute.build/Mute~partial.swiftmodule",
