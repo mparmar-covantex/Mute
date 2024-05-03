@@ -12,7 +12,6 @@ import AudioToolbox
 import UIKit
 #endif
 
-@objcMembers
 public class Mute: NSObject {
 
     public typealias MuteNotificationCompletion = ((_ mute: Bool) -> Void)
