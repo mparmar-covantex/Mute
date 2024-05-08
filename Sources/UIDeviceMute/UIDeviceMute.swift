@@ -12,14 +12,13 @@ import AudioToolbox
 import UIKit
 #endif
 
-public class UIDeviceMute: NSObject {
+public class UIDeviceMute {
+		/// Shared instance
+	public static let shared = UIDeviceMute()
 
     public typealias MuteNotificationCompletion = ((_ mute: Bool) -> Void)
 
     // MARK: Properties
-
-    /// Shared instance
-    public static let shared = UIDeviceMute()
 
     /// Sound ID for mute sound
     private let soundUrl = UIDeviceMute.muteSoundUrl
@@ -66,38 +65,9 @@ public class UIDeviceMute: NSObject {
     /// Time difference between start and finish of mute sound
     private var interval: TimeInterval = 0
 
-    // MARK: Resources
-
-    /// Library bundle
-    private static var bundle: Bundle {
-        if let path = Bundle(for: UIDeviceMute.self).path(forResource: "Mute", ofType: "bundle"),
-           let bundle = Bundle(path: path) {
-            return bundle
-        }
-
-        let spmBundleName = "Mute_Mute"
-
-        let candidates = [
-            // Bundle should be present here when the package is linked into an App.
-            Bundle.main.resourceURL,
-
-            // Bundle should be present here when the package is linked into a framework.
-            Bundle(for: UIDeviceMute.self).resourceURL
-        ]
-
-        for candidate in candidates {
-            let bundlePath = candidate?.appendingPathComponent(spmBundleName + ".bundle")
-            if let bundle = bundlePath.flatMap(Bundle.init(url:)) {
-                return bundle
-            }
-        }
-
-        fatalError("Mute.bundle not found")
-    }
-
     /// Mute sound url path
     private static var muteSoundUrl: URL {
-        guard let muteSoundUrl = UIDeviceMute.bundle.url(forResource: "mute", withExtension: "aiff") else {
+        guard let muteSoundUrl = Bundle(for: UIDeviceMute.self).url(forResource: "mute", withExtension: "aiff") else {
             fatalError("mute.aiff not found")
         }
         return muteSoundUrl
@@ -106,9 +76,7 @@ public class UIDeviceMute: NSObject {
     // MARK: Init
 
     /// private init
-    private override init() {
-        super.init()
-
+	private init() {
         self.soundId = 1
 
         if AudioServicesCreateSystemSoundID(self.soundUrl as CFURL, &self.soundId) == kAudioServicesNoError {
