@@ -3,14 +3,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "Mute",
+    name: "UIDeviceMute",
 	defaultLocalization: "en",
 	platforms: [
 		.iOS(.v13), .macOS(.v13), .watchOS(.v9), .tvOS(.v16)
 	],
-    products: [.library(name: "Mute", targets: ["Mute"])],
+    products: [.library(name: "UIDeviceMute", targets: ["UIDeviceMute"])],
     targets: [
-		.target(name: "Mute",
+		.target(name: "UIDeviceMute",
 				path: "Sources",
 				resources: [
 					.process("Resources")
