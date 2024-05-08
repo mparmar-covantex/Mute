@@ -76,7 +76,7 @@ public class UIDeviceMute {
     // MARK: Init
 
     /// private init
-	private init() {
+	public init() {
         self.soundId = 1
 
         if AudioServicesCreateSystemSoundID(self.soundUrl as CFURL, &self.soundId) == kAudioServicesNoError {
