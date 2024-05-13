@@ -12,16 +12,16 @@ import AudioToolbox
 import UIKit
 #endif
 
-public class UIDeviceMute {
+public class Mute {
 		/// Shared instance
-	public static let shared = UIDeviceMute()
+	public static let shared = Mute()
 
     public typealias MuteNotificationCompletion = ((_ mute: Bool) -> Void)
 
     // MARK: Properties
 
     /// Sound ID for mute sound
-    private let soundUrl = UIDeviceMute.muteSoundUrl
+    private let soundUrl = Mute.muteSoundUrl
 
     /// Should notify every second or only when changes?
     /// True will notify every second of the state, false only when it changes
@@ -67,7 +67,7 @@ public class UIDeviceMute {
 
 		/// Library bundle
 	private static var bundle: Bundle {
-		if let path = Bundle(for: UIDeviceMute.self).path(forResource: "Mute", ofType: "bundle"),
+		if let path = Bundle(for: Mute.self).path(forResource: "Mute", ofType: "bundle"),
 		   let bundle = Bundle(path: path) {
 			return bundle
 		}
@@ -79,7 +79,7 @@ public class UIDeviceMute {
 			Bundle.main.resourceURL,
 
 			// Bundle should be present here when the package is linked into a framework.
-			Bundle(for: UIDeviceMute.self).resourceURL
+			Bundle(for: Mute.self).resourceURL
 		]
 
 		for candidate in candidates {
@@ -94,7 +94,7 @@ public class UIDeviceMute {
 
 		/// Mute sound url path
 	private static var muteSoundUrl: URL {
-		guard let muteSoundUrl = UIDeviceMute.bundle.url(forResource: "mute", withExtension: "aiff") else {
+		guard let muteSoundUrl = Mute.bundle.url(forResource: "mute", withExtension: "aiff") else {
 			fatalError("mute.aiff not found")
 		}
 		return muteSoundUrl
@@ -123,12 +123,12 @@ public class UIDeviceMute {
 		#if canImport(UIKit)
 			// Notifications
 		NotificationCenter.default.addObserver(self,
-											   selector: #selector(UIDeviceMute.didEnterBackground(_:)),
+											   selector: #selector(self.didEnterBackground(_:)),
 											   name: UIApplication.didEnterBackgroundNotification,
 											   object: nil)
 
 		NotificationCenter.default.addObserver(self,
-											   selector: #selector(UIDeviceMute.willEnterForeground(_:)),
+											   selector: #selector(self.willEnterForeground(_:)),
 											   name: UIApplication.willEnterForegroundNotification,
 											   object: nil)
 		#endif
