@@ -94,7 +94,11 @@ public class UIDeviceMute {
 
 		/// Mute sound url path
 	private static var muteSoundUrl: URL {
-		guard let muteSoundUrl = Bundle.main.url(forResource: "mute", withExtension: "aiff") else {
+		if let muteSoundUrl = Bundle().locateFirst(forResource: "audioFile", withExtension: "aiff") {
+			return muteSoundUrl
+		}
+
+		guard let muteSoundUrl = Bundle.main.url(forResource: "audioFile", withExtension: "aiff") else {
 			fatalError("mute.aiff not found")
 		}
 		return muteSoundUrl
@@ -206,4 +210,15 @@ public class UIDeviceMute {
         }
         self.schedulePlaySound()
     }
+}
+
+extension Bundle {
+	func locateFirst(forResource: String, withExtension: String) -> URL? {
+		for b in Bundle.allBundles {
+			if let u = b.url(forResource: forResource, withExtension: withExtension) {
+				return u
+			}
+		}
+		return nil
+	}
 }
