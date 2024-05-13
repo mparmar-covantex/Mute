@@ -67,7 +67,7 @@ public class UIDeviceMute {
 
     /// Mute sound url path
     private static var muteSoundUrl: URL {
-        guard let muteSoundUrl = Bundle(for: UIDeviceMute.self).url(forResource: "mute", withExtension: "aiff") else {
+		guard let muteSoundUrl = Bundle(for: UIDeviceMute.self).url(forResource: "mute", withExtension: "aiff") else {
             fatalError("mute.aiff not found")
         }
         return muteSoundUrl
