@@ -13,7 +13,6 @@ let package = Package(
 		.target(name: "UIDeviceMute",
 				path: "Sources",
 				resources: [
-					.process("Resources"),
 					.process("Resources/mute.aiff")
 				])
 	]
