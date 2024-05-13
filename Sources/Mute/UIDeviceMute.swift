@@ -65,13 +65,40 @@ public class UIDeviceMute {
     /// Time difference between start and finish of mute sound
     private var interval: TimeInterval = 0
 
-    /// Mute sound url path
-    private static var muteSoundUrl: URL {
-		guard let muteSoundUrl = Bundle(for: UIDeviceMute.self).url(forResource: "mute", withExtension: "aiff") else {
-            fatalError("mute.aiff not found")
-        }
-        return muteSoundUrl
-    }
+		/// Library bundle
+	private static var bundle: Bundle {
+		if let path = Bundle(for: UIDeviceMute.self).path(forResource: "Mute", ofType: "bundle"),
+		   let bundle = Bundle(path: path) {
+			return bundle
+		}
+
+		let spmBundleName = "Mute_Mute"
+
+		let candidates = [
+			// Bundle should be present here when the package is linked into an App.
+			Bundle.main.resourceURL,
+
+			// Bundle should be present here when the package is linked into a framework.
+			Bundle(for: UIDeviceMute.self).resourceURL
+		]
+
+		for candidate in candidates {
+			let bundlePath = candidate?.appendingPathComponent(spmBundleName + ".bundle")
+			if let bundle = bundlePath.flatMap(Bundle.init(url:)) {
+				return bundle
+			}
+		}
+
+		fatalError("Mute.bundle not found")
+	}
+
+		/// Mute sound url path
+	private static var muteSoundUrl: URL {
+		guard let muteSoundUrl = UIDeviceMute.bundle.url(forResource: "mute", withExtension: "aiff") else {
+			fatalError("mute.aiff not found")
+		}
+		return muteSoundUrl
+	}
 
     // MARK: Init
 
